@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping Cart-Login</title>
+    <link rel="stylesheet" href="css/utiles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="brand">
+            <a href="index.html">shopping cart</a>
+          </div>
+          <nav class="navbar">
+            <ul class="nav-list">
+              <li class="nav-list-item capitalize">
+                <a href="login.html">sign in</a>
+              </li>
+              <li class="nav-list-item capitalize">
+                <a href="register.html">sign up</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="form-section login-form-section">
+      <div class="container">
+        <form class="form login-form">
+          <h2 class="title form-title login-form-title capitalize">
+            login user
+          </h2>
+          <input
+            id="login-username"
+            type="text"
+            class="login-username"
+            placeholder="Enter Username.... "
+          />
+          <input
+            id="login-password"
+            type="password"
+            class="login-password"
+            placeholder="Enter Password.... "
+          />
+          <button
+            type="submit"
+            id="login-submit-btn"
+            class="submit-btn login-submit-btn uppercase"
+          >
+            sign in
+          </button>
+          <p class="if-user capitalize">dont have account <span><a href="register.html"> sign up </a></span></p>
+        </form>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+</html>

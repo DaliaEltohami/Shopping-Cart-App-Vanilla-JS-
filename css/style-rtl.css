@@ -1,0 +1,16 @@
+[dir = 'rtl'] .home-content{
+    /* flex-direction: row-reverse; */
+}
+
+[dir = 'rtl'] .product-item{
+    /* flex-direction: row-reverse; */
+    /* text-align: right; */
+}
+
+[dir = 'rtl'] #products-filter{
+    /* text-align: right; */
+}
+
+[dir = 'rtl'] .product-item-img{
+    margin-left: 10px;
+}

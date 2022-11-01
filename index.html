@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/utiles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/create-product.css" />
+    <link rel="stylesheet" href="css/style-rtl.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <script
+      src="https://kit.fontawesome.com/f375b60ae0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="brand">
+            <a href="index.html">shopping cart</a>
+          </div>
+          <nav class="navbar">
+            <ul id="nav_list" class="nav-list">
+              <li class="nav-list-item capitalize">
+                <a href="login.html">sign in</a>
+              </li>
+              <li class="nav-list-item capitalize">
+                <a href="register.html">sign up</a>
+              </li>
+            </ul>
+            <ul id="welcome" class="welcome">
+              <li>
+                <a id="welcome-user" class="capitalize" href="profile.html"></a>
+              </li>
+              <li>
+                <a id="my-products" class="capitalize" href="my-products.html"
+                  >my products</a
+                >
+              </li>
+              <li><a class="capitalize" href="favorites.html">favorites</a></li>
+              <li><a class="capitalize" href="my-views.html">my views</a></li>
+              <li class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-notification"></div>
+                <div id="cart-dropdown" class="cart-dropdown">
+                  <div class="cart-dropdown-items"></div>
+                  <a href="cart.html" class="view-cart capitalize"
+                    >view cart items</a
+                  >
+                </div>
+              </li>
+              <li id="logout_btn" class="capitalize">logout</li>
+              <li class="lang">
+                lang
+                <ul class="lang-dropdown">
+                  <li id="ar">AR</li>
+                  <li id="en">EN</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="container">
+        <input
+          type="text"
+          id="search"
+          class="capitalize"
+          placeholder="search here"
+        />
+        <div class="home-content">
+          <div id="home_products" class="products"></div>
+          <div id="products-filter">
+            <h3 class="capitalized">filter by size:-</h3>
+            <select name="" id="select-filter">
+              <option value="" hidden>filter by size</option>
+              <option value="all">All</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="create-product-button">
+      <a class="create-product-link" href="create-product.html"
+        ><i class="fa fa-plus" aria-hidden="true"></i
+      ></a>
+    </div>
+    <script src="js/authentication.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/setCart.js"></script>
+    <script src="js/filterProducts.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
